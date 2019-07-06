@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MyBooksFragment">
+
+
+    <LinearLayout
+        android:id="@+id/reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/read"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Read"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/aa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="0 book" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:id="@+id/currently"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/reading">
+
+        <TextView
+            android:id="@+id/currently_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Currently Reading"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/bb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="0 book" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff" />
+
+    <LinearLayout
+        android:id="@+id/wantread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintTop_toBottomOf="@id/currently"
+
+        >
+
+        <TextView
+            android:id="@+id/want_toread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="Want to Read"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@id/currently_reading" />
+
+        <TextView
+            android:id="@+id/cc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="0 book" />
+
+    </LinearLayout>
+    <Button
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEE All"
+
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/btn_seeall"
+        />
+
+</LinearLayout>
